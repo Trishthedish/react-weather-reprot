@@ -1,5 +1,69 @@
 .center {
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: center;
+}
+.weather-box {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    border: solid 2px gray;
+    padding: 30px;
+    border-radius: 99.8px;
+}
+
+.button-holder {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* could I some call the colors to be applied ot this
+specificity?
+*/
+.weather-box > p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blinking-red {
+    color: red;
+    animation: animate 1.5s linear infinite;
+}
+
+.blinking-red::after {
+    content: "🔥";
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    color: #FFC000;
+}
+
+.green {
+    color: green;
+}
+
+.teal {
+    color: teal;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.7;
+      }
+      100%{
+        opacity: 0;
+      }
 }
