@@ -1,0 +1,5 @@
+.center {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
