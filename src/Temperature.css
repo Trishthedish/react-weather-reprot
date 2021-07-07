@@ -1,5 +1,4 @@
 .center {
-    /* background-color: yellow; */
     display: flex;
     justify-content: center;
 }
@@ -14,14 +13,10 @@
 }
 
 .button-holder {
-    /* background-color: red; */
     display: flex;
     justify-content: space-around;
 }
 
-/* could I some call the colors to be applied ot this
-specificity?
-*/
 .weather-box > p {
     font-size: 20px;
     font-weight: bold;
@@ -56,6 +51,7 @@ specificity?
     color: teal;
 }
 
+/* The Key to getting animation css class to work */
 @keyframes animate {
     0%{
         opacity: 0;
